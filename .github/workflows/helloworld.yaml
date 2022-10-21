@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-     workflow_dispatch: # can trigger from GUI
+    workflow_dispatch: # can trigger from GUI
      
 jobs:
   hello:
