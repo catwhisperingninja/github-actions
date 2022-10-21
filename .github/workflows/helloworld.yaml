@@ -1,0 +1,23 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches:
+      - main
+     workflow_dispatch: # can trigger from GUI
+     
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo "hello world"
+        shell: bash
+        
+goodbye:
+  runs-on: ubuntu-latest
+  steps:
+    - name: goodbye world
+      run: echo "goodbye world"
+      shell: bash
